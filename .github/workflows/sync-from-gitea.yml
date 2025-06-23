@@ -16,7 +16,7 @@ jobs:
         run: |
           git config --global user.email "your-email@example.com"
           git config --global user.name "GitHub Sync Bot"
-          git remote add gitea https://gitea.example.com/your-gitea-user/your-gitea-repo.git
+          git remote add gitea https://git.wosb.cc/qiz/doc.git
 
       - name: Pull from Gitea and push to GitHub
         env:
