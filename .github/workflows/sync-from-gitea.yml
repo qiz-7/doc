@@ -14,7 +14,7 @@ jobs:
 
       - name: Set up Git
         run: |
-          git config --global user.email "your-email@example.com"
+          git config --global user.email "qizxxxxx#gmail.com"
           git config --global user.name "GitHub Sync Bot"
           git remote add gitea https://git.wosb.cc/qiz/doc.git
 
