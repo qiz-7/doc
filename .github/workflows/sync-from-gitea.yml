@@ -23,6 +23,6 @@ jobs:
           GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }} # Gitea 个人访问令牌，需要作为 Secret 配置
         run: |
           # 为了防止认证信息暴露在日志中，使用 token 在 URL 中进行认证
-          git remote set-url gitea https://your-gitea-user:${{ env.GITEA_TOKEN }}@https://git.wosb.cc/qiz/doc.git
+          git remote set-url gitea https://qiz-0:${{ env.GITEA_TOKEN }}@git.wosb.cc/qiz/doc.git
           git pull gitea master --rebase # 假设主分支是 master，可以根据实际情况修改
           git push origin master --force # 强制推送到 GitHub，确保同步
